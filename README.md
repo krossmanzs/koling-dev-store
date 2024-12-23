@@ -120,7 +120,7 @@ project/
 
 - **Backend**: PHP
 - **Database**: MySQL
-- **Frontend**: HTML, CSS
+- **Frontend**: HTML, CSS, JS
 
 ## Contribution
 
