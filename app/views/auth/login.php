@@ -24,5 +24,6 @@
         </form>
         <p>Don't have an account? <a href="<?= BASE_URL ?>/auth/register">Register here</a>.</p>
     </div>
+    <script src="/js/validation.js"></script>
 </body>
 </html>

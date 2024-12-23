@@ -28,5 +28,6 @@
         </form>
         <p>Already have an account? <a href="<?= BASE_URL ?>/auth/login">Login here</a>.</p>
     </div>
+    <script src="/js/validation.js"></script>
 </body>
 </html>
