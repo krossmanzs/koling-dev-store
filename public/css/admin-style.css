@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2a2b2e;
+  color: #fff;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+/* Main Section */
+main {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.admin-dashboard h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.admin-dashboard p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.action-cell {
+  display: flex;
+  width: max-content;
+  gap: 0.5rem;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Button Danger Styling */
+.btn-danger {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+}
+
+.pagination {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.pagination a {
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #0056b3;
+}
+
+.pagination a.active {
+  background-color: #343a40;
+}
+
+/* General Styles */
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Container */
+.form-container {
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.header-form a {
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-size: 14px;
+  color: #333;
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-dashboard li {
+  width: max-content;
+}
+
+.admin-dashboard div {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.search-form input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.header-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
