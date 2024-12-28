@@ -1,5 +1,9 @@
 # Koling Dev Store
 
+Admin Account:
+Username: admin
+Password: Password123!
+
 ## Overview
 
 ![Logo Koling Dev](/public/img/logo.png)
